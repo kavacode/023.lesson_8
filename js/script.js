@@ -39,17 +39,17 @@ function buyProduct(productName) {
 	const buyButton = productDetails.querySelector('#buy-button');
 	buyButton.style.display = 'block';
 	buyButton.onclick = () => {
-		 alert('Поздровляю, вы купили товар');
-		 buyButton.style.display = 'none';
-		 resetProductDetails(productDetails);
-		 hideAllProducts();
+		alert('Поздрaвляю, вы купили товар');
+		buyButton.style.display = 'none';
+		resetProductDetails(productDetails);
+		hideAllProducts();
 	};
 }
 
 function resetProductDetails(productDetails) {
 	productDetails.querySelector('#product-description').textContent = '';
 	productDetails.querySelector('#product-price').textContent = '';
-	productDetails.querySelector('#product-image').src = ''; 
+	productDetails.querySelector('#product-image').src = '';
 }
 
 
