@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css" />
 	<title>023.lesson_8</title>
 </head>
+
 <body>
 	<h1>Homework #23</h1>
+	<div id="container">
+	<div id="categories">
+		<ul>
+			<h2>Категории товаров</h2>
+			<li onclick="showCategory('Холодильники')">Холодильники</li>
+			<li onclick="showCategory('Телевизоры')">Телевизоры</li>
+			<li onclick="showCategory('Кофемашины')">Кофемашины</li>
+			<li onclick="showCategory('Ноутбуки')">Ноутбуки</li>
+		</ul>
+	</div>
+
+	<div id="products">
+		
+		<ul>
+			<h2>Список товаров Холодильники</h2>
+			<li onclick="buyProduct('Холодильник BOSCH')">Холодильник BOSCH</li>
+			<li onclick="buyProduct('Холодильник SAMSUNG')">Холодильник SAMSUNG</li>
+			<li onclick="buyProduct('Холодильник Whirlpool')">Холодильник Whirlpool</li>
+			<li onclick="buyProduct('Холодильник BEKO')">Холодильник BEKO</li>
+			<li onclick="buyProduct('Холодильник LG')">Холодильник LG</li>
+		</ul>
+		
+		<ul>
+			<h2>Список товаров Телевизоры</h2>
+			<li onclick="buyProduct('Телевизор Hisense')">Телевизор Hisense</li>
+			<li onclick="buyProduct('Телевизор LG')">Телевизор LG</li>
+			<li onclick="buyProduct('Телевизор Samsung')">Телевизор Samsung</li>
+		</ul>
+		
+		<ul>
+			<h2>Список товаров Кофемашины</h2>
+			<li onclick="buyProduct('Кофемашина KRUPS')">Кофемашина KRUPS</li>
+			<li onclick="buyProduct('Кофемашина PHILIPS')">Кофемашина PHILIPS</li>
+			<li onclick="buyProduct('Кофемашина DELONGHI')">Кофемашина DELONGHI</li>
+		</ul>
+		
+		<ul>
+			<h2>Список товаров Ноутбуки</h2>
+			<li onclick="buyProduct('Ноутбук Apple')">Ноутбук Apple</li>
+			<li onclick="buyProduct('Ноутбук ASUS')">Ноутбук ASUS</li>
+			<li onclick="buyProduct('Ноутбук Lenovo')">Ноутбук Lenovo</li>
+		</ul>
+
+	</div>
+
+	<div id="product-details">
+		<h2></h2>
+		<img id="product-image" src="" alt="">
+		<p id="product-description"></p>
+		<p id="product-price"></p>
+		<button id="buy-button" onclick="buyProduct()">Купити</button>
+	</div>
+</div>
 	<script src="/js/script.js"></script>
 </body>
+
 </html>
